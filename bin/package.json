@@ -1,0 +1,9 @@
+{
+  "name": "abtest-gateway-admin",
+  "version": "0.0.1",
+  "description": "abtest-gateway-admin",
+  "scripts": {
+    "pm2_dev": "GIN_MODE=debug pm2 start ./abtest-gateway-admin.dev --kill-timeout 6000 -- -feDir=\"/data/fe/test-global-abtest-gateway-admin\" -logDir=\"/data/logs/gateway/test-global-abtest-admin\" -ssoAuthHost=\"http://sso.in.test.so\" -ssoAuthVersion=\"1.0.5\" -ssoAuthAppName=\"test-global-abtest-admin\""
+  },
+  "author": "weedge"
+}
